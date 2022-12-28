@@ -1,0 +1,71 @@
+/*Diferencias id - class
+El id crea un nombre unico para un  elemento y por ende no puede 
+volver a nombrarse mas
+class crea un nombre universal y por ende puede ser usado
+en varios elementos  */
+/* */
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #e01212;
+    text-align: center;
+    margin: 0;
+  }
+ div
+  {
+    color: rgb(0, 0, 0);
+  }
+  footer
+  {
+    color: #e01212;
+  }
+  aside
+  {
+    color: blue;
+  }
+.petrista
+{
+  color: aqua;
+}
+#petro
+{
+  color: blueviolet;
+}
+*
+{
+  background-color: bisque;
+  text-align: center;
+}
+article p
+{
+  color: greenyellow;
+}
+article > article p
+{
+  color: green;
+}
+.adyacente + p
+{
+  color: darkorange;
+}
+#hermanos ~ p
+{
+  color: hotpink;
+}
+#Selectores-de-pseudo-clases:not(#excluido)
+{
+  color: blanchedalmond;
+}
+#Selectores-de-pseudo-clases #hove:hover
+{
+  color: #e01212;
+
+}
+#Selectores-de-pseudo-elementos::before
+{
+content:"✂️";
+}
+#Selectores-de-pseudo-elementos + p::after
+{
+  content: "🪨";
+}
