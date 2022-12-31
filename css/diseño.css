@@ -1,17 +1,35 @@
+html
+{
+  font-size: 6.25%;
+}
+body
+{
+  font: size 16rem; ;
+}
 *{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+section
+{
+  width: 1000px;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+
 }
 .flex
 {
   display: flex;
-  position: relative;
+  position: absolute;
   box-sizing: border-box;
   border: 2px solid;
-  background-color: rgb(255, 145, 0);
+  background-color: #A60321 ;
   margin: auto;
   width: 500px;
   height: 50px;
+  top: 380px;
   align-items: center;
+  align-self: flex-end;
 }
 #spam
 {
@@ -39,10 +57,11 @@ h3
   margin: 5px;
   right: 100px;
   top: 10px;
+  font-size: 16rem;
 }
 .grid
 {
-  position: relative;
+  position: absolute;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr; 
   grid-template-rows: 1fr 1fr; 
@@ -51,11 +70,10 @@ h3
     ". . ."
     ". . ."; 
    border: 2px solid;
-  background-color: blue;
+  background-color:#D98162;
   width: 500px;
   height: 250px;
-  margin: auto;
-  top: 5px;
+  top: 100px;
 }
 #man
 {
@@ -87,10 +105,14 @@ h3
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 1;
+  font-size: 16rem;
 }
 
 
 
+section > * {
+  margin: 20px;
+}
 
 
 
@@ -115,7 +137,16 @@ h1
   position: relative;
   margin:30px;
   text-align: center;
+  font-size: 30rem ;
 }
+
+  @media (max-width: 400px) {
+    h1
+    {
+      color: #A60321;
+    }
+    
+  }
 ul
 {
   position: relative;
